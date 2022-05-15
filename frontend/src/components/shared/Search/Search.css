@@ -1,0 +1,54 @@
+.searchResultLink
+{
+    padding: 2px 4px;
+    width: 350px;
+}
+
+#bookPath{
+    stroke: white!important;
+}
+
+#bookPath:hover{
+    stroke: green!important;
+}
+
+.searchResultLink:hover {
+    background-color: var(--main);
+    color: white;
+}
+
+@keyframes animateWidth
+{
+    from {
+        width: 300px;
+    }
+
+    to {
+        width: 350px;
+    }
+}
+
+@keyframes animateWidthShrink
+{
+    from {
+        width: 350px;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+#search-input:focus {
+    width: 350px;
+    animation: animateWidth;
+    animation-duration: 400ms;
+    box-shadow: 0px 0px 4px var(--main);
+    border-color: var(--main);
+}
+
+#search-input:not(:focus){
+    width: 300px;
+    animation: animateWidthShrink;
+    animation-duration: 400ms;
+}

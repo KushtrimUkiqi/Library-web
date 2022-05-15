@@ -1,0 +1,26 @@
+.active-page-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background-color: var(--main)!important;
+    color: white!important;
+  }
+  
+  .active-page-pagination:hover , .page-pagination:hover{
+    background-color: var(--main-faded);
+    color: white;
+  }
+  
+  .page-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    background-color: white;
+    color: var(--main)
+  }
+  
+  .link:hover{
+    color: white;
+  }

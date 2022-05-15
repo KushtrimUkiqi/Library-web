@@ -1,0 +1,7 @@
+#main-button
+{
+    display: flex;
+    height: 42px!important;
+    width: 160px!important;
+    color: 'white';
+}

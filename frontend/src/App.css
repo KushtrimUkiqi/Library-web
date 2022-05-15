@@ -1,0 +1,88 @@
+:root
+{
+    --main: rgb(2, 18, 43);
+    --main-faded: rgb(3, 28, 68);
+    --secondary: #AC4918;
+    --secondary-faded: #783311;
+    --emptyState: #d9d9d9;
+}
+
+/* remove the border radius that bootstrap uses by general for it's components  */
+/* ATENTION this may require using !important when you want to use borderRadius on a component */
+*{
+    border-radius: 0!important;
+}
+
+/* remove some annoying css styling by overriding in the main css file*/
+
+li {
+    list-style: none;
+    list-style-position: outside;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;    
+}
+
+
+body::-webkit-scrollbar {
+    width: .9em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    background-color: white;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+  }
+
+
+/* 
+  the most used property is centering a div with flex. 
+  because of that this class will be used for that purpose!
+*/
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.btn{
+  border-color: var(--main);
+}
+
+.btn-primary{
+  background-color: var(--main-faded);
+}
+
+.btn-primary:hover{
+  background-color: var(--main);
+}
+
+.btn-primary:focus{
+  box-shadow: 0 0 4px var(--main);
+  background-color: var(--main);
+}
+
+.btn-secondary
+{
+  background-color: var(--secondary);
+}
+
+.btn-secondary:hover{
+  background-color: var(--secondary-faded);
+}
+
+.btn:focus{
+  box-shadow: 0 0 4px var(--main);
+}
+
+.btn-secondary:focus{
+  box-shadow: 0 0 4px var(--main);
+  background-color: var(--secondary-faded);
+}
+
+
